@@ -5,12 +5,18 @@
 }
 body
 {
-  background-image:url('./weather2.jpg');
+  background-image:url('./weatherbg.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:100vh;
 }
 .container
 {
-    width: 600px;
-    margin: 100px auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;  
     padding: 40px;
 }
 .inputs
@@ -18,18 +24,21 @@ body
     padding: 2rem 0 2rem 0;
     text-align:center;
     justify-content:center;
+    border-radius: 20px ;
     background:rgb(224,190,190);
     height:150px;
+    border: black solid 2px;
 }
 .inputs input[type="text"]
 {
     height:4rem;
     width:20rem;
-    background:#212121;
+    background:#c53131;
     font-weight:bold;
-    font-size:none;
+    font-size:15px;
     padding:10px;
     border:none;
+    letter-spacing: 5px;
     background-color:transparent;
     border:2px solid #473939;
     border-radius:3px;
@@ -39,7 +48,7 @@ body
 {
     height:3rem;
     width:6rem;
-    background:#270aca;
+    background:#2780bf;
     font-weight:bold;
     color:white;
     font-size: 1rem;
@@ -47,39 +56,49 @@ body
     border:none;
     border-radius:4px;
 }
+.inputs input[type="submit"]:hover
+{
+    background:#3ca474;
+    cursor:pointer;
+}
 .display
 {
     text-align:center;
     width:520px;
-    color:#16a864;
+    color:#3ca474;
 }
 .wrapper
 {
    margin:0 9rem;
-   background-color: rgb(172,189,221);
+   background-color: rgb(129, 163, 226);
    height: 45vh;
    margin: 50px auto;
-   border-radius: 2px;
+   border-radius: 20px;
+   border:#473939 solid 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .wrapper h2
 {
-     padding: 5px 0;
+     padding: 15px 0;
      text-align:center;
-     background:#0548b5;
+     border-radius: 20px 20px 0 0;
+     background:#000000;
      color:white;
 }
 .wrapper p
 {
     margin:20px 50px;
+    padding-top: 20px;
     margin-right: 20px;
-    text-align:left;
+    text-align:center;
     color:#04214c;
     font-size:23px;
+    font-style: italic;
 }
 .wrapper h2 span
 {
     font-size:26px;
-    color:#9beefb;
+    color:#2da4b6;
 }
 .wrapper span p
 {
